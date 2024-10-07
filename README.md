@@ -81,6 +81,8 @@ This folder
 ```shell
 python ./eval.py ./configs/thumos_i3d.yaml ./pretrained/thumos_i3d_reproduce/
 ```
+## Citation
+WangCheng. (2024). wangcheng666/ActionFormer: First release of ActionFormer (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13897289
 
 
 
