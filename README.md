@@ -2,7 +2,8 @@
 
 ## Introduction
 
-
+we propose a novel fully supervised approach for temporal action localization, leveraging cross-modal and cross-structural distillation techniques.Our method effectively integrates information from multiple modalities and structural representations, enhancing the discriminative power of action proposals. We introduce a distillation framework that transfers knowledge from a strong teacher model, trained on rich multi-modal data, to a student model designed for efficient inference. This distillation process not only improves the temporal localization accuracy but also enhances the robustness of action detection against variations in visual content. Experimental results on benchmark datasets demonstrate that
+our approach outperforms state-of-the-art methods, particularly in challenging scenarios where complex actions occur within dynamic backgrounds.
 
 
 ## Installation
@@ -12,7 +13,7 @@
 
 ## To Reproduce Our Results on THUMOS14
 **Download Features and Annotations**
-* Download *thumos.tar.gz* (`md5sum 375f76ffbf7447af1035e694971ec9b2`) from [this Box link](https://uwmadison.box.com/s/glpuxadymf3gd01m1cj6g5c3bn39qbgr) or [this Google Drive link](https://drive.google.com/file/d/1zt2eoldshf99vJMDuu8jqxda55dCyhZP/view?usp=sharing) or [this BaiduYun link](https://pan.baidu.com/s/1TgS91LVV-vzFTgIHl1AEGA?pwd=74eh).
+* Download *thumos.zip* (`md5sum 375f76ffbf7447af1035e694971ec9b2`) from [this BaiduYun link](https://pan.baidu.com/s/11dw7LKO941CF02aSNCkPcA?pwd=hu2r).
 * The file includes I3D features, action annotations in json format (similar to ActivityNet annotation format), and external classification scores.
 
 **Details**: The features are extracted from two-stream I3D models pretrained on Kinetics using clips of `16 frames` at the video frame rate (`~30 fps`) and a stride of `4 frames`. This gives one feature vector per `4/30 ~= 0.1333` seconds.
@@ -53,7 +54,7 @@ python ./eval.py ./configs/thumos_i3d.yaml ./ckpt/thumos_i3d_reproduce
 
 **[Optional] Evaluating Our Pre-trained Model**
 
-We also provide a pre-trained model for THUMOS 14. The model with all training logs can be downloaded from [this Google Drive link](https://drive.google.com/file/d/1isG3bc1dG5-llBRFCivJwz_7c_b0XDcY/view?usp=sharing). To evaluate the pre-trained model, please follow the steps listed below.
+We also provide a pre-trained model for THUMOS 14. The model with all training logs can be downloaded from [this BaiduYun link](https://pan.baidu.com/s/1KsVWVQ6RF9mg87c0YUwH9Q?pwd=fknf). To evaluate the pre-trained model, please follow the steps listed below.
 
 * Create a folder *./pretrained* and unpack the file under *./pretrained* (or elsewhere and link to *./pretrained*).
 * The folder structure should look like
