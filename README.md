@@ -13,7 +13,7 @@ our approach outperforms state-of-the-art methods, particularly in challenging s
 
 ## To Reproduce Our Results on THUMOS14
 **Download Features and Annotations**
-* Download *thumos.zip* (`md5sum 375f76ffbf7447af1035e694971ec9b2`) from [this BaiduYun link](https://pan.baidu.com/s/11dw7LKO941CF02aSNCkPcA?pwd=hu2r).
+* Download *thumos.zip* (`md5sum 375f76ffbf7447af1035e694971ec9b2`) from [this BaiduYun link](https://pan.baidu.com/s/1Nj6haq2iqQuGNiOfCg--ag?pwd=2qhg).
 * The file includes I3D features, action annotations in json format (similar to ActivityNet annotation format), and external classification scores.
 
 **Details**: The features are extracted from two-stream I3D models pretrained on Kinetics using clips of `16 frames` at the video frame rate (`~30 fps`) and a stride of `4 frames`. This gives one feature vector per `4/30 ~= 0.1333` seconds.
@@ -54,7 +54,7 @@ python ./eval.py ./configs/thumos_i3d.yaml ./ckpt/thumos_i3d_reproduce
 
 **[Optional] Evaluating Our Pre-trained Model**
 
-We also provide a pre-trained model for THUMOS 14. The model with all training logs can be downloaded from [this BaiduYun link](https://pan.baidu.com/s/1KsVWVQ6RF9mg87c0YUwH9Q?pwd=fknf). To evaluate the pre-trained model, please follow the steps listed below.
+We also provide a pre-trained model for THUMOS 14. The model with all training logs can be downloaded from [this BaiduYun link](https://pan.baidu.com/s/1Nj6haq2iqQuGNiOfCg--ag?pwd=2qhg). To evaluate the pre-trained model, please follow the steps listed below.
 
 * Create a folder *./pretrained* and unpack the file under *./pretrained* (or elsewhere and link to *./pretrained*).
 * The folder structure should look like
